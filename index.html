@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Pokédex - Info</title>
+</head>
+<body>
+    <div id="pokemon-container">
+        <div id="navbar">
+            <a id="back-home" href="#">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 0C28.283 0 31.5339 0.646644 34.5671 1.90301C37.6002 3.15938 40.3562 5.00087 
+                    42.6777 7.32233C44.9991 9.6438 46.8406 12.3998 48.097 15.4329C49.3534 18.4661 50 21.717 
+                    50 25C50 31.6304 47.3661 37.9893 42.6777 42.6777C37.9893 47.3661 31.6304 50 25 50C21.717 
+                    50 18.4661 49.3534 15.4329 48.097C12.3998 46.8406 9.6438 44.9991 7.32233 42.6777C2.63392 
+                    37.9893 0 31.6304 0 25C0 18.3696 2.63392 12.0107 7.32233 7.32233C12.0107 2.63392 18.3696 
+                    0 25 0ZM25 5C14.8 5 6.375 12.625 5.15 22.5H15.325C16.425 18.175 20.35 15 25 15C29.65 15 
+                    33.575 18.175 34.675 22.5H44.85C43.625 12.625 35.2 5 25 5ZM25 45C35.2 45 43.625 37.375 
+                    44.85 27.5H34.675C33.575 31.825 29.65 35 25 35C20.35 35 16.425 31.825 15.325 27.5H5.15C6.375 
+                    37.375 14.8 45 25 45ZM25 20C23.6739 20 22.4021 20.5268 21.4645 21.4645C20.5268 22.4021 
+                    20 23.6739 20 25C20 26.3261 20.5268 27.5979 21.4645 28.5355C22.4021 29.4732 23.6739 30 25 
+                    30C26.3261 30 27.5979 29.4732 28.5355 28.5355C29.4732 27.5979 30 26.3261 30 25C30 23.6739 
+                    29.4732 22.4021 28.5355 21.4645C27.5979 20.5268 26.3261 20 25 20Z" fill="white"/>
+                </svg>  
+            </a>
+            <div id="searchBox">
+                <input class="search-bar" type="text" placeholder="search a pokémon by name or id" name="search" value="">
+                <button class="submit" type="submit">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#6C757D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 19L14.65 14.65" stroke="#6C757D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="info-container">
+            <div id="pokemon-sprite">
+                <img src="" alt="" id="image">
+            </div>
+            <div id="stats-container">
+                <div class="stats" id="stat-1">
+                    <div id="name">
+                        <h2>Name</h2>
+                        <p class="pokemon-name"><span id="pokemon-name"></span></p>
+                    </div>
+                    <div id="id">
+                        <h2>Id</h2>
+                        <p class="pokemon-id">#<span id="pokemon-id"></span></p>
+                    </div>
+                    <div id="height">
+                        <h2>Heigth</h2>
+                        <p class="pokemon-height"><span id="pokemon-heigth"></span> m</p>
+                    </div>
+                    <div id="weight">
+                        <h2>Weight</h2>
+                        <p class="pokemon-weight"><span id="pokemon-weight"></span> kg</p>
+                    </div>
+                </div>
+                <div class="stats" id="stat-2">
+                    <div id="type">
+                        <h2>Type(s)</h2>
+                        <p class="pokemon-type">
+                            <span id="pokemon-type-1"></span>
+                            <span id="pokemon-type-2"></span>
+                        </p>
+                    </div>
+                    <div id="weight">
+                        <h2>Weakness(es)</h2>
+                        <p class="pokemon-weakness">
+                            <span id="pokemon-weakness-1"></span>
+                            <span id="pokemon-weakness-2"></span>
+                            <span id="pokemon-weakness-3"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
